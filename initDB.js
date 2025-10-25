@@ -3,7 +3,7 @@ import Chat from "./models/chat.js";
 
 main()
   .then(() => {
-    console.log("Connected to whatsapp");
+    console.log("Connected to app");
   })
   .catch((err) => console.log(err));
 
