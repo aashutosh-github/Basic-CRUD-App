@@ -18,7 +18,7 @@ app.use(methodOverride("_method"));
 
 main()
   .then(() => {
-    console.log("Connected to whatsapp");
+    console.log("Connected to app");
   })
   .catch((err) => console.log(err));
 
