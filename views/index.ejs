@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display All Chats</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>All Chats</h1>
+      <hr />
+      <div class="scrollableArea">
+        <% for (let chat of chats) { %>
+        <div class="oneUserChat">
+          <div>From: <%= chat.from %></div>
+          <div>To: <%= chat.to %></div>
+          <div>Message: <%= chat.message %></div>
+          <div>
+            Date: <%= chat.created_at.toString().split(" ").slice(0,4).join("-")
+            %>
+          </div>
+          <div>
+            Time: <%= chat.created_at.toString().split(" ")[4] %>
+            <form
+              method="get"
+              action="/chats/<%= chat._id %>/edit"
+              id="editBtnForm">
+              <button type="submit" id="editBtn">Edit</button>
+            </form>
+            <form
+              method="POST"
+              action="/chats/<%= chat._id %>/?_method=DELETE"
+              id="deleteBtnForm">
+              <button type="submit" id="deleteBtn">Delete</button>
+            </form>
+          </div>
+          <hr />
+        </div>
+        <% } %>
+      </div>
+      <form method="get" action="/chats/new" id="newBtnForm">
+        <button id="addBtn">Add new post</button>
+      </form>
+    </main>
+  </body>
+</html>

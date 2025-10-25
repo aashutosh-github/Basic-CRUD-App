@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100dvh;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: solid 2px #626262;
+  padding: 15px 15px 0px 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: clamp(19rem, 20.4rem, 20.8rem);
+  max-width: 35rem;
+}
+.scrollableArea {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #626262 #1a1a1a;
+  flex-grow: 1;
+}
+
+.container h1 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.oneUserChat {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+#addBtn {
+  background-color: rgb(163, 0, 163);
+  color: #fff;
+  border-radius: 5px;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#editBtnForm {
+  float: right;
+  margin: 0 15px 0 0;
+  width: 4rem;
+}
+
+#editBtn {
+  background-color: rgb(163, 0, 163);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#deleteBtnForm {
+  float: right;
+  margin: 0 15px 0 0;
+  width: 4rem;
+}
+
+#deleteBtn {
+  background-color: rgb(163, 0, 163);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}

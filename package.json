@@ -1,0 +1,23 @@
+{
+  "name": "mongopractice",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bun --hot index.js",
+    "devNode": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.19.2"
+  }
+}
