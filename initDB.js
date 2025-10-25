@@ -8,7 +8,7 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect(`${process.env.MONGODB_LINK}/whatsapp`);
+  await mongoose.connect(`${process.env.MONGODB_LINK}/app`);
 }
 
 const allChats = [
