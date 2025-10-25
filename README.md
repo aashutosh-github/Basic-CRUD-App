@@ -7,7 +7,8 @@
 ## Cloning and entering folder
 
 ```sh
-git clone
+git clone https://github.com/aashutosh-github/Basic-CRUD-App.git
+cd Basic-CRUD-App
 ```
 
 ## To initialize:
